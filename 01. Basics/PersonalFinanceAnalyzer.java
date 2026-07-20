@@ -8,33 +8,33 @@ public class PersonalFinanceAnalyzer {
         double monthlyIncome = input.nextDouble();
 
         System.out.print("Enter rent: ");
-        double monthlyRentC = input.nextDouble();
+        double monthlyRent = input.nextDouble();
 
         System.out.print("Enter food cost: ");
-        double monthlyFoodC = input.nextDouble();
+        double monthlyFood = input.nextDouble();
 
         System.out.print("Enter transport cost: ");
-        double monthlyTransportC = input.nextDouble();
+        double monthlyTransport = input.nextDouble();
 
         System.out.print("Enter entertainment cost: ");
-        double monthlyEntertainC = input.nextDouble();
+        double monthlyEntertain = input.nextDouble();
 
-        double monthlyExpenses = monthlyRentC + monthlyFoodC + monthlyTransportC + monthlyEntertainC;
+        double monthlyExpenses = monthlyRent + monthlyFood + monthlyTransport + monthlyEntertain;
 
-        double remainMoney = monthlyIncome - monthlyExpenses;
+        double remainingMoney = monthlyIncome - monthlyExpenses;
 
-        double needsPercentage = ((monthlyRentC + monthlyFoodC + monthlyTransportC) / monthlyIncome) * 100;
-        double wantsPercentage = (monthlyEntertainC / monthlyIncome) * 100;
-        double savingPercentage = (remainMoney / monthlyIncome) * 100;
+        double needsPercentage = ((monthlyRent + monthlyFood + monthlyTransport) / monthlyIncome) * 100;
+        double wantsPercentage = (monthlyEntertain / monthlyIncome) * 100;
+        double savingPercentage = (remainingMoney / monthlyIncome) * 100;
 
         System.out.println();
         System.out.println("---- Finance Analyzer ----");
         System.out.println("Total Income: " + monthlyIncome);
         System.out.println("Monthly Expenses: " + monthlyExpenses);
-        System.out.println("Remaining Money: " + remainMoney);
+        System.out.println("Remaining Money: " + remainingMoney);
         System.out.println("Income percentage spent on Needs: " + needsPercentage + "%");
         System.out.println("Income percentage spent on Wants: " + wantsPercentage + "%");
-        System.out.println("Income percentage saved: " + savingPercentage + "%");
+        System.out.printf("Income percentage saved: %.2f%% %n", savingPercentage);
 
         input.close();
     }    
