@@ -2,28 +2,40 @@
 
 ## Overview
 
-This project is a step-by-step simulation of an ATM system built while learning Java.
+This project is an evolving ATM system built while learning Java.
 
-The goal is **not** to create a complete banking application, but to recreate common ATM functionality incrementally as new Java concepts are learned. Each version introduces new programming concepts and improves the design of the application.
+Rather than creating separate projects for each new topic, this application is continuously improved as new Java concepts are learned. The goal is to simulate the core functionality of an ATM while applying programming principles in a realistic way.
 
-As the project evolves, new features and better coding practices will be added instead of rewriting everything from scratch.
+Each new feature is added to the existing codebase, allowing the project to grow in complexity and demonstrate the progression from basic Java syntax to object-oriented application development.
 
-## Learning Goals
+## Learning Objectives
 
-* Practice Java fundamentals through a real-world project.
-* Apply newly learned concepts to an existing codebase.
-* Improve problem-solving and program design skills.
-* Observe how software evolves over multiple versions.
+* Apply Java concepts through a single long-term project.
+* Develop problem-solving and software design skills.
+* Practice writing clean, readable, and maintainable code.
+* Learn how software evolves through incremental improvements using Git.
 
-## Planned Progression
+## Planned Features
 
-* **v0.1** — Variables, user input, conditionals, and basic ATM operations.
-* **v0.2** — Cleaner menu handling and improved program flow.
-* **v0.3** — Loops for a persistent ATM session.
-* **v0.4** — Methods for modular and reusable code.
-* **v0.5** — Arrays and support for multiple accounts.
-* **v1.0+** — Object-Oriented Programming with classes such as `Account`, `Customer`, and `ATM`, followed by additional Java features as they are learned.
+As new Java topics are learned, the ATM system will gradually include features such as:
+
+* User authentication
+* Deposits and withdrawals
+* Balance inquiries
+* Persistent menu system
+* Modular design using methods
+* Multiple account support
+* Transaction history
+* File-based data storage
+* Object-Oriented Programming with classes such as `ATM`, `Account`, and `Customer`
+* Additional improvements and refactoring as the project evolves
+
+## Project Philosophy
+
+This repository is intended to document the learning journey, not just the final result.
+
+Instead of creating separate versions of the project, the application is continuously refactored and expanded. Git commit history serves as the project's timeline, making it possible to track how the codebase evolves over time.
 
 ## Disclaimer
 
-This is an educational project created for learning Java. It is not intended to represent a real banking system and does not implement real-world security or financial standards.
+This is an educational project created for learning Java. It is a simplified ATM simulation and is **not** intended to represent a real banking system or implement real-world financial security standards.
