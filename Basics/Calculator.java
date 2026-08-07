@@ -13,12 +13,22 @@ public class Calculator {
             System.out.println("4. Divide");
             System.out.print("Choose an option: ");
             int choice = input.nextInt();
+
+            if (choice < 1 || choice > 4) {
+                System.out.println("Invalid choice.");
+                continue;
+            }
             double result = 0;
 
             System.out.print("Enter number 1: ");
             double x = input.nextDouble();
             System.out.print("Enter number 2: ");
             double y = input.nextDouble();
+
+            if (choice == 4 && y == 0) {
+                 System.out.println("Cannot divide by zero.");
+                 continue;
+            }
 
             switch(choice) {
                 case 1:
@@ -43,16 +53,13 @@ public class Calculator {
             System.out.println("Calculate again(y/n)?: ");
             char again = input.next().charAt(0);
 
-            if(again == 'n') {
+            if (again == 'n') {
                 loopCal = false;
             }
-            else if(again == 'y') {
-            }
-            else {
+            else if (again != 'y') {
                 System.out.println("Enter valid choice");
                 break;
             }
-
         } while(loopCal);
 
         input.close();
@@ -71,14 +78,6 @@ public class Calculator {
     }
 
     public static double divide(double x, double y) {
-        if (y == 0) {
-            System.out.println("Error: Cannot divide by zero.");
-            return 0;
-        }
-        else {
-            return x / y;
-        }
+        return x / y; 
     }
-
-
 }
