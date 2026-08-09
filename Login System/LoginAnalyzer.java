@@ -34,6 +34,8 @@ public class LoginAnalyzer {
                 System.out.println("Invalid username, try again");
             }  
         } while (welcomeLoop); 
+
+        input.close();
     }   
 
     public static int usernameCheck(String loginUsername) {
