@@ -40,21 +40,17 @@ public class LoginAnalyzer {
 
     public static int usernameCheck(String loginUsername) {
         String[] usernames = {"Arvin", "Adam", "Bob", "Peter"};
-        int usernameIndex = -1;
-        for (usernameIndex = 0; usernameIndex < usernames.length; usernameIndex++) {
+        for (int usernameIndex = 0; usernameIndex < usernames.length; usernameIndex++) {
             if (loginUsername.equalsIgnoreCase(usernames[usernameIndex])) {
                 return usernameIndex;
             }
         }
-        return usernameIndex;
+        return -1;
     }
 
     public static boolean passwordCheck(String loginPassword, int usernameIndex) {
         String[] passwords = {"aeafhbk", "asdgs", "hdfssdh", "vsdfsd"};
-        if (loginPassword.equals(passwords[usernameIndex])) {
-            return true;
-        }
-        return false;
+        return loginPassword.equals(passwords[usernameIndex]);
     }
 
     public static void welcomeMessage(int usernameIndex) {
